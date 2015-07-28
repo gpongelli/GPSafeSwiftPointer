@@ -11,39 +11,17 @@
 		E03CC2791B5841FE00B3A349 /* GPSafeSwiftPointer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E03CC26E1B5841FE00B3A349 /* GPSafeSwiftPointer.framework */; };
 		E03CC27E1B5841FE00B3A349 /* GPSafeSwiftPointerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03CC27D1B5841FE00B3A349 /* GPSafeSwiftPointerTests.swift */; };
 		E03CC2891B5842D400B3A349 /* GPSafeSwiftPointer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03CC2881B5842D400B3A349 /* GPSafeSwiftPointer.swift */; };
-		E03CC2931B58470500B3A349 /* GPSafeSwiftPointerOSX.h in Headers */ = {isa = PBXBuildFile; fileRef = E03CC2921B58470500B3A349 /* GPSafeSwiftPointerOSX.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E03CC29A1B58470500B3A349 /* GPSafeSwiftPointerOSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E03CC2901B58470500B3A349 /* GPSafeSwiftPointerOSX.framework */; };
-		E03CC29F1B58470500B3A349 /* GPSafeSwiftPointerOSXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03CC29E1B58470500B3A349 /* GPSafeSwiftPointerOSXTests.swift */; };
-		E03CC2A71B58474700B3A349 /* GPSafeSwiftPointer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03CC2881B5842D400B3A349 /* GPSafeSwiftPointer.swift */; };
-		E03CC2A91B5847CD00B3A349 /* GPSafeSwiftPointer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03CC2881B5842D400B3A349 /* GPSafeSwiftPointer.swift */; };
-		E03CC2AA1B584D6400B3A349 /* GPSafeSwiftPointer.h in Headers */ = {isa = PBXBuildFile; fileRef = E03CC2711B5841FE00B3A349 /* GPSafeSwiftPointer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E03CC2AD1B584DC500B3A349 /* GPSafeSwiftPointer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03CC2881B5842D400B3A349 /* GPSafeSwiftPointer.swift */; };
-		E05CBED01B66CC0400D05F88 /* GPSafeSwiftPointerWK.h in Headers */ = {isa = PBXBuildFile; fileRef = E05CBECF1B66CC0400D05F88 /* GPSafeSwiftPointerWK.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E05CBED51B671E2100D05F88 /* IntegerProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D01B161B6523EB00D4D161 /* IntegerProtocols.swift */; };
-		E05CBED61B671E2100D05F88 /* SignedIntegerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D01B1B1B65247A00D4D161 /* SignedIntegerExtensions.swift */; };
-		E05CBED71B671E2100D05F88 /* UnsignedIntegerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D01B201B65248A00D4D161 /* UnsignedIntegerExtensions.swift */; };
-		E05CBED81B671E2100D05F88 /* UnsafeMutablePointerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D01B251B65249B00D4D161 /* UnsafeMutablePointerExtension.swift */; };
-		E05CBED91B671E2A00D05F88 /* GPSafeSwiftPointer.h in Headers */ = {isa = PBXBuildFile; fileRef = E03CC2711B5841FE00B3A349 /* GPSafeSwiftPointer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E05CBEDA1B671E3200D05F88 /* GPSafeSwiftPointer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03CC2881B5842D400B3A349 /* GPSafeSwiftPointer.swift */; };
 		E05CBEDC1B67629D00D05F88 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = E05CBEDB1B67629D00D05F88 /* .gitignore */; };
 		E05CBEDE1B6762AC00D05F88 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = E05CBEDD1B6762AC00D05F88 /* LICENSE */; };
-		E05CBEE01B6762DA00D05F88 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = E05CBEDF1B6762DA00D05F88 /* README.md */; };
 		E0D01B171B6523EB00D4D161 /* IntegerProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D01B161B6523EB00D4D161 /* IntegerProtocols.swift */; };
 		E0D01B181B6523EB00D4D161 /* IntegerProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D01B161B6523EB00D4D161 /* IntegerProtocols.swift */; };
-		E0D01B191B6523EB00D4D161 /* IntegerProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D01B161B6523EB00D4D161 /* IntegerProtocols.swift */; };
-		E0D01B1A1B6523EB00D4D161 /* IntegerProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D01B161B6523EB00D4D161 /* IntegerProtocols.swift */; };
 		E0D01B1C1B65247A00D4D161 /* SignedIntegerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D01B1B1B65247A00D4D161 /* SignedIntegerExtensions.swift */; };
 		E0D01B1D1B65247A00D4D161 /* SignedIntegerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D01B1B1B65247A00D4D161 /* SignedIntegerExtensions.swift */; };
-		E0D01B1E1B65247A00D4D161 /* SignedIntegerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D01B1B1B65247A00D4D161 /* SignedIntegerExtensions.swift */; };
-		E0D01B1F1B65247A00D4D161 /* SignedIntegerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D01B1B1B65247A00D4D161 /* SignedIntegerExtensions.swift */; };
 		E0D01B211B65248A00D4D161 /* UnsignedIntegerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D01B201B65248A00D4D161 /* UnsignedIntegerExtensions.swift */; };
 		E0D01B221B65248A00D4D161 /* UnsignedIntegerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D01B201B65248A00D4D161 /* UnsignedIntegerExtensions.swift */; };
-		E0D01B231B65248A00D4D161 /* UnsignedIntegerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D01B201B65248A00D4D161 /* UnsignedIntegerExtensions.swift */; };
-		E0D01B241B65248A00D4D161 /* UnsignedIntegerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D01B201B65248A00D4D161 /* UnsignedIntegerExtensions.swift */; };
 		E0D01B261B65249B00D4D161 /* UnsafeMutablePointerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D01B251B65249B00D4D161 /* UnsafeMutablePointerExtension.swift */; };
 		E0D01B271B65249B00D4D161 /* UnsafeMutablePointerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D01B251B65249B00D4D161 /* UnsafeMutablePointerExtension.swift */; };
-		E0D01B281B65249B00D4D161 /* UnsafeMutablePointerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D01B251B65249B00D4D161 /* UnsafeMutablePointerExtension.swift */; };
-		E0D01B291B65249B00D4D161 /* UnsafeMutablePointerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D01B251B65249B00D4D161 /* UnsafeMutablePointerExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,13 +31,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = E03CC26D1B5841FE00B3A349;
 			remoteInfo = GPSafeSwiftPointer;
-		};
-		E03CC29B1B58470500B3A349 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E03CC2651B5841FE00B3A349 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E03CC28F1B58470500B3A349;
-			remoteInfo = GPSafeSwiftPointerOSX;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -72,15 +43,6 @@
 		E03CC27F1B5841FE00B3A349 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E03CC2881B5842D400B3A349 /* GPSafeSwiftPointer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPSafeSwiftPointer.swift; sourceTree = "<group>"; };
 		E03CC28A1B58437B00B3A349 /* PlaygroundTest.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = PlaygroundTest.playground; sourceTree = "<group>"; };
-		E03CC2901B58470500B3A349 /* GPSafeSwiftPointerOSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GPSafeSwiftPointerOSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E03CC2921B58470500B3A349 /* GPSafeSwiftPointerOSX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPSafeSwiftPointerOSX.h; sourceTree = "<group>"; };
-		E03CC2941B58470500B3A349 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E03CC2991B58470500B3A349 /* GPSafeSwiftPointerOSXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GPSafeSwiftPointerOSXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E03CC29E1B58470500B3A349 /* GPSafeSwiftPointerOSXTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPSafeSwiftPointerOSXTests.swift; sourceTree = "<group>"; };
-		E03CC2A01B58470500B3A349 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E05CBECD1B66CC0400D05F88 /* GPSafeSwiftPointerWK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GPSafeSwiftPointerWK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E05CBECF1B66CC0400D05F88 /* GPSafeSwiftPointerWK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPSafeSwiftPointerWK.h; sourceTree = "<group>"; };
-		E05CBED11B66CC0400D05F88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E05CBEDB1B67629D00D05F88 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		E05CBEDD1B6762AC00D05F88 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		E05CBEDF1B6762DA00D05F88 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -107,28 +69,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E03CC28C1B58470500B3A349 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E03CC2961B58470500B3A349 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E03CC29A1B58470500B3A349 /* GPSafeSwiftPointerOSX.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E05CBEC91B66CC0400D05F88 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -137,9 +77,6 @@
 			children = (
 				E03CC2701B5841FE00B3A349 /* GPSafeSwiftPointer */,
 				E03CC27C1B5841FE00B3A349 /* GPSafeSwiftPointerTests */,
-				E03CC2911B58470500B3A349 /* GPSafeSwiftPointerOSX */,
-				E03CC29D1B58470500B3A349 /* GPSafeSwiftPointerOSXTests */,
-				E05CBECE1B66CC0400D05F88 /* GPSafeSwiftPointerWK */,
 				E03CC26F1B5841FE00B3A349 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -149,9 +86,6 @@
 			children = (
 				E03CC26E1B5841FE00B3A349 /* GPSafeSwiftPointer.framework */,
 				E03CC2781B5841FE00B3A349 /* GPSafeSwiftPointerTests.xctest */,
-				E03CC2901B58470500B3A349 /* GPSafeSwiftPointerOSX.framework */,
-				E03CC2991B58470500B3A349 /* GPSafeSwiftPointerOSXTests.xctest */,
-				E05CBECD1B66CC0400D05F88 /* GPSafeSwiftPointerWK.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -181,33 +115,6 @@
 			path = GPSafeSwiftPointerTests;
 			sourceTree = "<group>";
 		};
-		E03CC2911B58470500B3A349 /* GPSafeSwiftPointerOSX */ = {
-			isa = PBXGroup;
-			children = (
-				E03CC2921B58470500B3A349 /* GPSafeSwiftPointerOSX.h */,
-				E03CC2941B58470500B3A349 /* Info.plist */,
-			);
-			path = GPSafeSwiftPointerOSX;
-			sourceTree = "<group>";
-		};
-		E03CC29D1B58470500B3A349 /* GPSafeSwiftPointerOSXTests */ = {
-			isa = PBXGroup;
-			children = (
-				E03CC29E1B58470500B3A349 /* GPSafeSwiftPointerOSXTests.swift */,
-				E03CC2A01B58470500B3A349 /* Info.plist */,
-			);
-			path = GPSafeSwiftPointerOSXTests;
-			sourceTree = "<group>";
-		};
-		E05CBECE1B66CC0400D05F88 /* GPSafeSwiftPointerWK */ = {
-			isa = PBXGroup;
-			children = (
-				E05CBECF1B66CC0400D05F88 /* GPSafeSwiftPointerWK.h */,
-				E05CBED11B66CC0400D05F88 /* Info.plist */,
-			);
-			path = GPSafeSwiftPointerWK;
-			sourceTree = "<group>";
-		};
 		E0D01B2A1B65281C00D4D161 /* Protocols and Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -227,24 +134,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E03CC2721B5841FE00B3A349 /* GPSafeSwiftPointer.h in Headers */,
-				E03CC2931B58470500B3A349 /* GPSafeSwiftPointerOSX.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E03CC28D1B58470500B3A349 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E03CC2AA1B584D6400B3A349 /* GPSafeSwiftPointer.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E05CBECA1B66CC0400D05F88 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E05CBED91B671E2A00D05F88 /* GPSafeSwiftPointer.h in Headers */,
-				E05CBED01B66CC0400D05F88 /* GPSafeSwiftPointerWK.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,60 +176,6 @@
 			productReference = E03CC2781B5841FE00B3A349 /* GPSafeSwiftPointerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		E03CC28F1B58470500B3A349 /* GPSafeSwiftPointerOSX */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E03CC2A11B58470500B3A349 /* Build configuration list for PBXNativeTarget "GPSafeSwiftPointerOSX" */;
-			buildPhases = (
-				E03CC28B1B58470500B3A349 /* Sources */,
-				E03CC28C1B58470500B3A349 /* Frameworks */,
-				E03CC28D1B58470500B3A349 /* Headers */,
-				E03CC28E1B58470500B3A349 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = GPSafeSwiftPointerOSX;
-			productName = GPSafeSwiftPointerOSX;
-			productReference = E03CC2901B58470500B3A349 /* GPSafeSwiftPointerOSX.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		E03CC2981B58470500B3A349 /* GPSafeSwiftPointerOSXTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E03CC2A41B58470500B3A349 /* Build configuration list for PBXNativeTarget "GPSafeSwiftPointerOSXTests" */;
-			buildPhases = (
-				E03CC2951B58470500B3A349 /* Sources */,
-				E03CC2961B58470500B3A349 /* Frameworks */,
-				E03CC2971B58470500B3A349 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E03CC29C1B58470500B3A349 /* PBXTargetDependency */,
-			);
-			name = GPSafeSwiftPointerOSXTests;
-			productName = GPSafeSwiftPointerOSXTests;
-			productReference = E03CC2991B58470500B3A349 /* GPSafeSwiftPointerOSXTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		E05CBECC1B66CC0400D05F88 /* GPSafeSwiftPointerWK */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E05CBED21B66CC0400D05F88 /* Build configuration list for PBXNativeTarget "GPSafeSwiftPointerWK" */;
-			buildPhases = (
-				E05CBEC81B66CC0400D05F88 /* Sources */,
-				E05CBEC91B66CC0400D05F88 /* Frameworks */,
-				E05CBECA1B66CC0400D05F88 /* Headers */,
-				E05CBECB1B66CC0400D05F88 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = GPSafeSwiftPointerWK;
-			productName = GPSafeSwiftPointerWK;
-			productReference = E05CBECD1B66CC0400D05F88 /* GPSafeSwiftPointerWK.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -356,16 +191,6 @@
 						DevelopmentTeam = Z73U65VEZ4;
 					};
 					E03CC2771B5841FE00B3A349 = {
-						CreatedOnToolsVersion = 7.0;
-					};
-					E03CC28F1B58470500B3A349 = {
-						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = Z73U65VEZ4;
-					};
-					E03CC2981B58470500B3A349 = {
-						CreatedOnToolsVersion = 7.0;
-					};
-					E05CBECC1B66CC0400D05F88 = {
 						CreatedOnToolsVersion = 7.0;
 					};
 				};
@@ -384,9 +209,6 @@
 			targets = (
 				E03CC26D1B5841FE00B3A349 /* GPSafeSwiftPointer */,
 				E03CC2771B5841FE00B3A349 /* GPSafeSwiftPointerTests */,
-				E03CC28F1B58470500B3A349 /* GPSafeSwiftPointerOSX */,
-				E03CC2981B58470500B3A349 /* GPSafeSwiftPointerOSXTests */,
-				E05CBECC1B66CC0400D05F88 /* GPSafeSwiftPointerWK */,
 			);
 		};
 /* End PBXProject section */
@@ -408,27 +230,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E03CC28E1B58470500B3A349 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E03CC2971B58470500B3A349 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E05CBECB1B66CC0400D05F88 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -436,7 +237,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E05CBEE01B6762DA00D05F88 /* README.md in Sources */,
 				E0D01B171B6523EB00D4D161 /* IntegerProtocols.swift in Sources */,
 				E0D01B211B65248A00D4D161 /* UnsignedIntegerExtensions.swift in Sources */,
 				E0D01B1C1B65247A00D4D161 /* SignedIntegerExtensions.swift in Sources */,
@@ -458,43 +258,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E03CC28B1B58470500B3A349 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E0D01B191B6523EB00D4D161 /* IntegerProtocols.swift in Sources */,
-				E0D01B231B65248A00D4D161 /* UnsignedIntegerExtensions.swift in Sources */,
-				E0D01B1E1B65247A00D4D161 /* SignedIntegerExtensions.swift in Sources */,
-				E0D01B281B65249B00D4D161 /* UnsafeMutablePointerExtension.swift in Sources */,
-				E03CC2A71B58474700B3A349 /* GPSafeSwiftPointer.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E03CC2951B58470500B3A349 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E0D01B291B65249B00D4D161 /* UnsafeMutablePointerExtension.swift in Sources */,
-				E0D01B241B65248A00D4D161 /* UnsignedIntegerExtensions.swift in Sources */,
-				E0D01B1F1B65247A00D4D161 /* SignedIntegerExtensions.swift in Sources */,
-				E03CC29F1B58470500B3A349 /* GPSafeSwiftPointerOSXTests.swift in Sources */,
-				E0D01B1A1B6523EB00D4D161 /* IntegerProtocols.swift in Sources */,
-				E03CC2A91B5847CD00B3A349 /* GPSafeSwiftPointer.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E05CBEC81B66CC0400D05F88 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E05CBEDA1B671E3200D05F88 /* GPSafeSwiftPointer.swift in Sources */,
-				E05CBED81B671E2100D05F88 /* UnsafeMutablePointerExtension.swift in Sources */,
-				E05CBED61B671E2100D05F88 /* SignedIntegerExtensions.swift in Sources */,
-				E05CBED71B671E2100D05F88 /* UnsignedIntegerExtensions.swift in Sources */,
-				E05CBED51B671E2100D05F88 /* IntegerProtocols.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -502,11 +265,6 @@
 			isa = PBXTargetDependency;
 			target = E03CC26D1B5841FE00B3A349 /* GPSafeSwiftPointer */;
 			targetProxy = E03CC27A1B5841FE00B3A349 /* PBXContainerItemProxy */;
-		};
-		E03CC29C1B58470500B3A349 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E03CC28F1B58470500B3A349 /* GPSafeSwiftPointerOSX */;
-			targetProxy = E03CC29B1B58470500B3A349 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -659,106 +417,6 @@
 			};
 			name = Release;
 		};
-		E03CC2A21B58470500B3A349 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "Developer ID Application";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = GPSafeSwiftPointerOSX/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = com.pongelli.gabriele.GPSafeSwiftPointerOSX;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = macosx;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		E03CC2A31B58470500B3A349 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "Developer ID Application";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = GPSafeSwiftPointerOSX/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = com.pongelli.gabriele.GPSafeSwiftPointerOSX;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = macosx;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		E03CC2A51B58470500B3A349 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = GPSafeSwiftPointerOSXTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.pongelli.gabriele.GPSafeSwiftPointerOSXTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		E03CC2A61B58470500B3A349 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = GPSafeSwiftPointerOSXTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.pongelli.gabriele.GPSafeSwiftPointerOSXTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		E05CBED31B66CC0400D05F88 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = GPSafeSwiftPointerWK/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.pongelli.gabriele.GPSafeSwiftPointerWK;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Debug;
-		};
-		E05CBED41B66CC0400D05F88 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = GPSafeSwiftPointerWK/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.pongelli.gabriele.GPSafeSwiftPointerWK;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -785,33 +443,6 @@
 			buildConfigurations = (
 				E03CC2861B5841FE00B3A349 /* Debug */,
 				E03CC2871B5841FE00B3A349 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E03CC2A11B58470500B3A349 /* Build configuration list for PBXNativeTarget "GPSafeSwiftPointerOSX" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E03CC2A21B58470500B3A349 /* Debug */,
-				E03CC2A31B58470500B3A349 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E03CC2A41B58470500B3A349 /* Build configuration list for PBXNativeTarget "GPSafeSwiftPointerOSXTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E03CC2A51B58470500B3A349 /* Debug */,
-				E03CC2A61B58470500B3A349 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E05CBED21B66CC0400D05F88 /* Build configuration list for PBXNativeTarget "GPSafeSwiftPointerWK" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E05CBED31B66CC0400D05F88 /* Debug */,
-				E05CBED41B66CC0400D05F88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

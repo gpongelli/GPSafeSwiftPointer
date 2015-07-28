@@ -9,16 +9,6 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
-		<key>GPSafeSwiftPointerOSX.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
-		</dict>
-		<key>GPSafeSwiftPointerWK.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>3</integer>
-		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -48,6 +38,21 @@
 			<true/>
 		</dict>
 		<key>E05CBECC1B66CC0400D05F88</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E0D186761B67FE6E0058D162</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E0D1867F1B67FE6F0058D162</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E0D186921B67FE8E0058D162</key>
 		<dict>
 			<key>primary</key>
 			<true/>
