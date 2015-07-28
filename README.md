@@ -1,4 +1,5 @@
 # GPSafeSwiftPointer
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 A framework containing a safe wrapper for UnsafeMutablePointer with integer to byte array generics.
 
 ## Requirements
@@ -42,7 +43,7 @@ Another reason that let me create this framework was about memory management, be
 
 ## Installation
 ### Carthage
-TODO
+Insert `github "gpongelli/GPSafeSwiftPointer" >= 0.1` in your Cartfile
 
 
 ## Usage
