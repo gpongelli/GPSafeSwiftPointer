@@ -51,6 +51,7 @@ Some simple usage are reported here, some usage are already showed in motivation
 
 ### Initialization
 GPSafeSwiftPointer variables can be initializated as follows
+
 1. let test = GPSafeSwiftPointer<_type_>()  // alloc one element of type _type_
 2. let test = GPSafeSwiftPointer<_type_>(allocatedMemory: _k_)  // alloc _k_ elements of type _type_
 3. let test = GPSafeSwiftPointer<_type_>(initializeWithValue: _n_)  // alloc one element of type _type_ initialized with value _n_
