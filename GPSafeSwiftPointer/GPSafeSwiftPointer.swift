@@ -78,6 +78,7 @@ public class GPSafeSwiftPointer<TYPE> : NSObject {
 extension GPSafeSwiftPointer where TYPE : ByteArrayType {
     func getByteArray() -> [UInt8] {
         var ret = [UInt8]()
+        ret.reserveCapacity(self.allocatedMemory * self.sizeofType)
         
         for (var i = self.allocatedMemory - 1; i >= 0; i--) {
             ret.extend( self[i]!.getByteArray() )
