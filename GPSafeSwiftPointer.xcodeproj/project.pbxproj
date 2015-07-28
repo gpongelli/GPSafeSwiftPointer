@@ -25,6 +25,9 @@
 		E05CBED81B671E2100D05F88 /* UnsafeMutablePointerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D01B251B65249B00D4D161 /* UnsafeMutablePointerExtension.swift */; };
 		E05CBED91B671E2A00D05F88 /* GPSafeSwiftPointer.h in Headers */ = {isa = PBXBuildFile; fileRef = E03CC2711B5841FE00B3A349 /* GPSafeSwiftPointer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E05CBEDA1B671E3200D05F88 /* GPSafeSwiftPointer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03CC2881B5842D400B3A349 /* GPSafeSwiftPointer.swift */; };
+		E05CBEDC1B67629D00D05F88 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = E05CBEDB1B67629D00D05F88 /* .gitignore */; };
+		E05CBEDE1B6762AC00D05F88 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = E05CBEDD1B6762AC00D05F88 /* LICENSE */; };
+		E05CBEE01B6762DA00D05F88 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = E05CBEDF1B6762DA00D05F88 /* README.md */; };
 		E0D01B171B6523EB00D4D161 /* IntegerProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D01B161B6523EB00D4D161 /* IntegerProtocols.swift */; };
 		E0D01B181B6523EB00D4D161 /* IntegerProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D01B161B6523EB00D4D161 /* IntegerProtocols.swift */; };
 		E0D01B191B6523EB00D4D161 /* IntegerProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D01B161B6523EB00D4D161 /* IntegerProtocols.swift */; };
@@ -78,6 +81,9 @@
 		E05CBECD1B66CC0400D05F88 /* GPSafeSwiftPointerWK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GPSafeSwiftPointerWK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E05CBECF1B66CC0400D05F88 /* GPSafeSwiftPointerWK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPSafeSwiftPointerWK.h; sourceTree = "<group>"; };
 		E05CBED11B66CC0400D05F88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E05CBEDB1B67629D00D05F88 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		E05CBEDD1B6762AC00D05F88 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		E05CBEDF1B6762DA00D05F88 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E05F058F1B61D2F300CED85A /* PlaygroundTwo.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = PlaygroundTwo.playground; sourceTree = "<group>"; };
 		E0D01B161B6523EB00D4D161 /* IntegerProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntegerProtocols.swift; sourceTree = "<group>"; };
 		E0D01B1B1B65247A00D4D161 /* SignedIntegerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignedIntegerExtensions.swift; sourceTree = "<group>"; };
@@ -159,6 +165,9 @@
 				E03CC28A1B58437B00B3A349 /* PlaygroundTest.playground */,
 				E05F058F1B61D2F300CED85A /* PlaygroundTwo.playground */,
 				E0D01B2A1B65281C00D4D161 /* Protocols and Extensions */,
+				E05CBEDB1B67629D00D05F88 /* .gitignore */,
+				E05CBEDD1B6762AC00D05F88 /* LICENSE */,
+				E05CBEDF1B6762DA00D05F88 /* README.md */,
 			);
 			path = GPSafeSwiftPointer;
 			sourceTree = "<group>";
@@ -387,6 +396,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E05CBEDE1B6762AC00D05F88 /* LICENSE in Resources */,
+				E05CBEDC1B67629D00D05F88 /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +436,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E05CBEE01B6762DA00D05F88 /* README.md in Sources */,
 				E0D01B171B6523EB00D4D161 /* IntegerProtocols.swift in Sources */,
 				E0D01B211B65248A00D4D161 /* UnsignedIntegerExtensions.swift in Sources */,
 				E0D01B1C1B65247A00D4D161 /* SignedIntegerExtensions.swift in Sources */,
