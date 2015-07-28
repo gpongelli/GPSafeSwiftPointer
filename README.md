@@ -69,11 +69,13 @@ returns the underlying UnsafeMutablePointer<TYPE> to be used when calling Apple 
 Test file contains some tests about all integer types conversion to and from byte array, having Big Endian coding.
 
 So for example, an UInt16 equal to _24288_ will be converted to an array of two UInt8 containing __[94, 224]__ having these representation:
+
 Representation |  MSB     |   LSB
 :--------------|:--------:|:--------:
 integer        |    94    |   224
 binary         | 01011110 | 11100000
 hexadecimal    |   0x5E   |   0xE0
+
 Converting back the hexadecimal or binary representation will lead to the original value.
 
 
