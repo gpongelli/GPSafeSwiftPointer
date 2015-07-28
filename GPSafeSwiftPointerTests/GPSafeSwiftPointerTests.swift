@@ -22,14 +22,14 @@ class GPSafeSwiftPointerTests: XCTestCase {
     }
     
     func testTypeOf() {
-        let myType = GPSafeSwiftPointers<UInt8>().ump.self.dynamicType
+        let myType = GPSafeSwiftPointer<UInt8>().ump.self.dynamicType
         let originalType = UnsafeMutablePointer<UInt8>.self
         
         XCTAssert( originalType == myType , "Different Type")
     }
     
     func testSubscript() {
-        let anUmp = GPSafeSwiftPointers<UInt8>(allocatedMemory: 2)
+        let anUmp = GPSafeSwiftPointer<UInt8>(allocatedMemory: 2)
         anUmp[0] = 4
         anUmp[1] = 7
         
@@ -39,7 +39,7 @@ class GPSafeSwiftPointerTests: XCTestCase {
     }
     
     func testConvenienceInit() {
-        let anUmp = GPSafeSwiftPointers<UInt8>(initializeWithValue: 11)
+        let anUmp = GPSafeSwiftPointer<UInt8>(initializeWithValue: 11)
         
         XCTAssertEqual(anUmp[0]!, 11, "Init error")
         XCTAssertNil(anUmp[1] as! AnyObject?, "Init error")
@@ -114,14 +114,14 @@ class GPSafeSwiftPointerTests: XCTestCase {
     }
     
     func testGPSafeGetByteArray() {
-        let gpSafe = GPSafeSwiftPointers<UInt32>(allocatedMemory: 2)
+        let gpSafe = GPSafeSwiftPointer<UInt32>(allocatedMemory: 2)
         gpSafe[0] = 1054
         gpSafe[1] = 7
         XCTAssertEqual(gpSafe.getByteArray(), [0, 0, 0, 7, 0, 0, 4, 30], "GPSafeSwiftPointer getByteArray Error")
     }
     
     func testUnsafeBitCast() {
-        let gpSafe = GPSafeSwiftPointers<UInt8>(initializeWithValue: 5)
+        let gpSafe = GPSafeSwiftPointer<UInt8>(initializeWithValue: 5)
         XCTAssertNotEqual(unsafeBitCast(gpSafe.ump, UInt.self), 5, "Unsafe bit cast error")
         
         // for educational purpose, gpSafe.ump contains the hexadecimal address and not the value
