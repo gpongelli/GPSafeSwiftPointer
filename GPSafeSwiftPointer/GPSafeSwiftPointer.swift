@@ -9,7 +9,7 @@
 import Foundation
 
 
-public class GPSafeSwiftPointers<TYPE> : NSObject {
+public class GPSafeSwiftPointer<TYPE> : NSObject {
     
     //MARK: - Private Section
     private let allocatedMemory : Int
@@ -74,8 +74,8 @@ public class GPSafeSwiftPointers<TYPE> : NSObject {
 }
 
 
-// MARK: - ByteArrayType extension for GPSafeSwiftPointers
-extension GPSafeSwiftPointers where TYPE : ByteArrayType {
+// MARK: - ByteArrayType extension for GPSafeSwiftPointer
+extension GPSafeSwiftPointer where TYPE : ByteArrayType {
     func getByteArray() -> [UInt8] {
         var ret = [UInt8]()
         
