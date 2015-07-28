@@ -74,10 +74,10 @@ func integerWithBytes<T: GenericIntegerType where T: SignedIntegerType, T:  Gene
 // MARK: - Generic Byte Array function
 func getGenericByteArray<T : GenericIntegerType where T : UnsignedIntegerType, T : ByteArrayType>(unsInt : T) -> [UInt8] {
     let sizeofT = sizeof(T)
-    var ret = [UInt8]()
+    var ret = [UInt8](count: sizeofT, repeatedValue: 0)
     
     for (var j = sizeofT - 1 ; j >= 0; j--) {
-        ret.append( UInt8((unsInt.toUIntMax() >> UIntMax(j * 8)) & 0xFF) )
+        ret[j] = UInt8((unsInt.toUIntMax() >> UIntMax(j * 8)) & 0xFF)
     }
     
     return ret
@@ -86,10 +86,10 @@ func getGenericByteArray<T : GenericIntegerType where T : UnsignedIntegerType, T
 
 func getGenericByteArray<T : GenericIntegerType where T : SignedIntegerType, T : ByteArrayType>(unsInt : T) -> [UInt8] {
     let sizeofT = sizeof(T)
-    var ret = [UInt8]()
+    var ret = [UInt8](count: sizeofT, repeatedValue: 0)
     
     for (var j = sizeofT - 1 ; j >= 0; j--) {
-        ret.append( UInt8((unsInt.toIntMax() >> IntMax(j * 8)) & 0xFF) )
+        ret[j] = UInt8((unsInt.toIntMax() >> IntMax(j * 8)) & 0xFF)
     }
     
     return ret
