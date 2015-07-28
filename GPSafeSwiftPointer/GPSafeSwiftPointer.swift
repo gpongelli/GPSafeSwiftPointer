@@ -66,15 +66,6 @@ public class GPSafeSwiftPointers<TYPE> : NSObject {
         }
     }
     
-    /*  ritorna l'indirizzo non il valore contenuto
-    public func castSafePointer<TO_TYPE>(/*aGPSafePointer : GPSafeSwiftPointers<TYPE>*/) -> TO_TYPE? {
-        if ( (self.allocatedMemory * self.sizeofType) == sizeof(TO_TYPE) ) {
-            return unsafeBitCast(self.unsafeMutablePointer, TO_TYPE.self)
-        } else {
-            return nil
-        }
-    }*/
-    
     //MARK: - Deinitialization
     deinit {
         unsafeMutablePointer.destroy()
