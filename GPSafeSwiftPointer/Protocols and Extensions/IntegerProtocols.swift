@@ -76,8 +76,8 @@ func getGenericByteArray<T : GenericIntegerType where T : UnsignedIntegerType, T
     let sizeofT = sizeof(T)
     var ret = [UInt8](count: sizeofT, repeatedValue: 0)
     
-    for (var j = sizeofT - 1 ; j >= 0; j--) {
-        ret[j] = UInt8((unsInt.toUIntMax() >> UIntMax(j * 8)) & 0xFF)
+    for (var j = 0 ; j < sizeofT ; j++) {
+        ret[sizeofT - j - 1] = UInt8((unsInt.toUIntMax() >> UIntMax(j * 8)) & 0xFF)
     }
     
     return ret
@@ -88,8 +88,8 @@ func getGenericByteArray<T : GenericIntegerType where T : SignedIntegerType, T :
     let sizeofT = sizeof(T)
     var ret = [UInt8](count: sizeofT, repeatedValue: 0)
     
-    for (var j = sizeofT - 1 ; j >= 0; j--) {
-        ret[j] = UInt8((unsInt.toIntMax() >> IntMax(j * 8)) & 0xFF)
+    for (var j = 0 ; j < sizeofT; j++) {
+        ret[sizeofT - j - 1] = UInt8((unsInt.toIntMax() >> IntMax(j * 8)) & 0xFF)
     }
     
     return ret
