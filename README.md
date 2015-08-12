@@ -44,7 +44,7 @@ Another reason that let me create this framework was about memory management, be
 
 ## Installation
 ### Carthage
-Insert `github "gpongelli/GPSafeSwiftPointer" >= 0.1` in your Cartfile
+Insert `github "gpongelli/GPSafeSwiftPointer" ~> 0.3` in your Cartfile
 
 
 ## Usage
