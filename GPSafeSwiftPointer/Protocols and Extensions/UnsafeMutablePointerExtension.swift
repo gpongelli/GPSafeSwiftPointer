@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension UnsafeMutablePointer where T : ByteArrayType {
+extension UnsafeMutablePointer where Memory : ByteArrayType {
     func returnByteArray() -> [UInt8] {
         return self.memory.getByteArray()
     }
