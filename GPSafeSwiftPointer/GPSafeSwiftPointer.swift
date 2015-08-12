@@ -48,7 +48,7 @@ public class GPSafeSwiftPointer<TYPE> : NSObject {
     
     
     //MARK: - Subscription
-    subscript(idx: Int) -> TYPE? {
+    public subscript(idx: Int) -> TYPE? {
         get {
             if (!isAllowed(idx)) {
                 return nil
@@ -76,7 +76,7 @@ public class GPSafeSwiftPointer<TYPE> : NSObject {
 
 // MARK: - ByteArrayType extension for GPSafeSwiftPointer
 extension GPSafeSwiftPointer where TYPE : ByteArrayType {
-    func getByteArray() -> [UInt8] {
+    public func getByteArray() -> [UInt8] {
         var ret = [UInt8]()
         ret.reserveCapacity(self.allocatedMemory * self.sizeofType)
         
