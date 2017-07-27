@@ -189,9 +189,11 @@
 					E03CC26D1B5841FE00B3A349 = {
 						CreatedOnToolsVersion = 7.0;
 						DevelopmentTeam = Z73U65VEZ4;
+						LastSwiftMigration = 0830;
 					};
 					E03CC2771B5841FE00B3A349 = {
 						CreatedOnToolsVersion = 7.0;
+						LastSwiftMigration = 0830;
 					};
 				};
 			};
@@ -375,6 +377,7 @@
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -394,6 +397,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -404,6 +408,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pongelli.gabriele.GPSafeSwiftPointerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -414,6 +419,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pongelli.gabriele.GPSafeSwiftPointerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
