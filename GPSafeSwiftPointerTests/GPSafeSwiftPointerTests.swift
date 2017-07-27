@@ -22,7 +22,7 @@ class GPSafeSwiftPointerTests: XCTestCase {
     }
     
     func testTypeOf() {
-        let myType = GPSafeSwiftPointer<UInt8>().ump.self.dynamicType
+        let myType = type(of: GPSafeSwiftPointer<UInt8>().ump.self)
         let originalType = UnsafeMutablePointer<UInt8>.self
         
         XCTAssert( originalType == myType , "Different Type")
@@ -35,7 +35,7 @@ class GPSafeSwiftPointerTests: XCTestCase {
         
         XCTAssertEqual(anUmp[0]!, 4, "Subscription error")
         XCTAssertEqual(anUmp[1]!, 7, "Subscription error")
-        XCTAssertNil(anUmp[2] as! AnyObject?, "Subscription error")
+        XCTAssertNil(anUmp[2] as AnyObject?, "Subscription error")
     }
     
     func testConvenienceInit() {
@@ -114,11 +114,11 @@ class GPSafeSwiftPointerTests: XCTestCase {
     }
     
     func testUnsafeMutablePointer() {
-        let ump = UnsafeMutablePointer<UInt32>.alloc(1)
-        ump.initialize(1054)
+        let ump = UnsafeMutablePointer<UInt32>.allocate(capacity: 1)
+        ump.initialize(to: 1054)
         XCTAssertEqual(ump.returnByteArray(), [0, 0, 4, 30], "UnsafeMutablePointer getByteArray Error")
-        ump.destroy()
-        ump.dealloc(1)
+        ump.deinitialize()
+        ump.deallocate(capacity: 1)
     }
     
     func testGPSafeGetByteArray() {
@@ -130,12 +130,12 @@ class GPSafeSwiftPointerTests: XCTestCase {
     
     func testUnsafeBitCast() {
         let gpSafe = GPSafeSwiftPointer<UInt8>(initializeWithValue: 5)
-        XCTAssertNotEqual(unsafeBitCast(gpSafe.ump, UInt.self), 5, "Unsafe bit cast error")
+        XCTAssertNotEqual(UInt(bitPattern: gpSafe.ump), 5, "Unsafe bit cast error")
         
         // for educational purpose, gpSafe.ump contains the hexadecimal address and not the value
         //print(gpSafe.ump)
         
         // gpSafe.ump[0] can be cast only to UnsafeMutablePointer type, otherwise error
-        XCTAssertEqual(unsafeBitCast(gpSafe.ump[0], UInt8.self), 5, "Unsafe bit cast of pointed value error")
+        XCTAssertEqual(gpSafe.ump[0], 5, "Unsafe bit cast of pointed value error")
     }
 }
