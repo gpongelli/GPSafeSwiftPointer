@@ -43,7 +43,15 @@ open class GPSafeSwiftPointer<TYPE> : NSObject {
     
     convenience public init(initializeWithValue : TYPE) {
         self.init()
-        unsafeMutablePointer.initialize(initializeWithValue)
+        unsafeMutablePointer.initialize(to: initializeWithValue)
+    }
+    
+    convenience public init(initializeWithValue : [TYPE]) {
+        self.init(allocatedMemory: initializeWithValue.count)
+        
+        for i in 0 ..< initializeWithValue.count {
+            self[i] = initializeWithValue[i]
+        }
     }
     
     

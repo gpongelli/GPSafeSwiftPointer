@@ -42,7 +42,15 @@ class GPSafeSwiftPointerTests: XCTestCase {
         let anUmp = GPSafeSwiftPointer<UInt8>(initializeWithValue: 11)
         
         XCTAssertEqual(anUmp[0]!, 11, "Init error")
-        XCTAssertNil(anUmp[1] as! AnyObject?, "Init error")
+        XCTAssertNil(anUmp[1] as AnyObject?, "Init error")
+    }
+    
+    func testConvenienceInitArray() {
+        let anUmpArray : [UInt8] = [1, 3];
+        let anUmp = GPSafeSwiftPointer<UInt8>(initializeWithValue: anUmpArray)
+        
+        XCTAssertEqual(anUmp[0]!, 1, "Init error")
+        XCTAssertEqual(anUmp[1]!, 3, "Init error")
     }
     
     func testUIntToByteArray() {
