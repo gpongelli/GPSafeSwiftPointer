@@ -9,28 +9,28 @@
 import Foundation
 
 
-public class GPSafeSwiftPointer<TYPE> : NSObject {
+open class GPSafeSwiftPointer<TYPE> : NSObject {
     
     //MARK: - Private Section
-    private let allocatedMemory : Int
+    fileprivate let allocatedMemory : Int
     
-    private var unsafeMutablePointer : UnsafeMutablePointer<TYPE>
+    fileprivate var unsafeMutablePointer : UnsafeMutablePointer<TYPE>
     
-    private func isAllowed(idx : Int) -> Bool {
+    fileprivate func isAllowed(_ idx : Int) -> Bool {
         return idx < self.allocatedMemory
     }
     
     
     //MARK: - Public Computed Property
-    public var ump : UnsafeMutablePointer<TYPE> {
+    open var ump : UnsafeMutablePointer<TYPE> {
         get {
             return unsafeMutablePointer
         }
     }
     
-    public var sizeofType : Int {
+    open var sizeofType : Int {
         get {
-            return sizeof(TYPE)
+            return MemoryLayout<TYPE>.size
         }
     }
     
@@ -38,7 +38,7 @@ public class GPSafeSwiftPointer<TYPE> : NSObject {
     //MARK: - Initializers
     required public init(allocatedMemory : Int = 1) {
         self.allocatedMemory = allocatedMemory
-        unsafeMutablePointer = UnsafeMutablePointer<TYPE>.alloc(self.allocatedMemory)
+        unsafeMutablePointer = UnsafeMutablePointer<TYPE>.allocate(capacity: self.allocatedMemory)
     }
     
     convenience public init(initializeWithValue : TYPE) {
@@ -48,7 +48,7 @@ public class GPSafeSwiftPointer<TYPE> : NSObject {
     
     
     //MARK: - Subscription
-    public subscript(idx: Int) -> TYPE? {
+    open subscript(idx: Int) -> TYPE? {
         get {
             if (!isAllowed(idx)) {
                 return nil
@@ -62,14 +62,14 @@ public class GPSafeSwiftPointer<TYPE> : NSObject {
                 return
             }
             
-            unsafeMutablePointer.advancedBy(idx).initialize(newValue!)
+            unsafeMutablePointer.advanced(by: idx).initialize(to: newValue!)
         }
     }
     
     //MARK: - Deinitialization
     deinit {
-        unsafeMutablePointer.destroy()
-        unsafeMutablePointer.dealloc(allocatedMemory)
+        unsafeMutablePointer.deinitialize()
+        unsafeMutablePointer.deallocate(capacity: allocatedMemory)
     }
 }
 
@@ -80,8 +80,8 @@ extension GPSafeSwiftPointer where TYPE : ByteArrayType {
         var ret = [UInt8]()
         ret.reserveCapacity(self.allocatedMemory * self.sizeofType)
         
-        for (var i = self.allocatedMemory - 1; i >= 0; i--) {
-            ret.appendContentsOf( self[i]!.getByteArray() )
+        for i in (0..<self.allocatedMemory).reversed() {
+            ret.append( contentsOf: self[i]!.getByteArray() )
         }
         
         return ret
