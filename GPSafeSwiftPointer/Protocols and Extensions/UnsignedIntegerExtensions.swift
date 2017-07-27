@@ -20,7 +20,7 @@ extension UInt16:GenericIntegerType, GenericUnsignedIntegerBitPattern {}
 extension UInt32:GenericIntegerType, GenericUnsignedIntegerBitPattern {}
 
 extension UInt64:GenericIntegerType, GenericUnsignedIntegerBitPattern {    
-    init(truncatingBitPattern: UIntMax) {
+    public init(truncatingBitPattern: UIntMax) {
         self.init(truncatingBitPattern)
     }
 }
@@ -28,25 +28,25 @@ extension UInt64:GenericIntegerType, GenericUnsignedIntegerBitPattern {
 
 // MARK: - ByteArrayType extension for unsigned integer
 extension UInt8 : ByteArrayType {
-    func getByteArray() -> [UInt8] {
+    public func getByteArray() -> [UInt8] {
         return getGenericByteArray(self)
     }
 }
 
 extension UInt16 : ByteArrayType {
-    func getByteArray() -> [UInt8] {
+    public func getByteArray() -> [UInt8] {
         return getGenericByteArray(self)
     }
 }
 
 extension UInt32 : ByteArrayType {
-    func getByteArray() -> [UInt8] {
+    public func getByteArray() -> [UInt8] {
         return getGenericByteArray(self)
     }
 }
 
 extension UInt64 : ByteArrayType {
-    func getByteArray() -> [UInt8] {
+    public func getByteArray() -> [UInt8] {
         return getGenericByteArray(self)
     }
 }

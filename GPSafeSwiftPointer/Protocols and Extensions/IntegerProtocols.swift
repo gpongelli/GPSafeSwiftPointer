@@ -14,7 +14,7 @@ import Foundation
 typealias Byte = UInt8
 
 // MARK: - Generic Integer Protocols
-protocol GenericIntegerType: IntegerType {
+public protocol GenericIntegerType: Integer {
     init(_ v: Int)
     init(_ v: UInt)
     init(_ v: Int8)
@@ -27,18 +27,18 @@ protocol GenericIntegerType: IntegerType {
     init(_ v: UInt64)
 }
 
-protocol GenericSignedIntegerBitPattern {
+public protocol GenericSignedIntegerBitPattern {
     init(bitPattern: UIntMax)
     init(truncatingBitPattern: IntMax)
 }
 
-protocol GenericUnsignedIntegerBitPattern {
+public protocol GenericUnsignedIntegerBitPattern {
     init(truncatingBitPattern: UIntMax)
 }
 
 
 // MARK: - Byte Array protocol
-protocol ByteArrayType {
+public protocol ByteArrayType {
     func getByteArray() -> [UInt8]
 }
 

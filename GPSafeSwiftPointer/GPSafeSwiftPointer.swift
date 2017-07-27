@@ -76,7 +76,7 @@ open class GPSafeSwiftPointer<TYPE> : NSObject {
 
 // MARK: - ByteArrayType extension for GPSafeSwiftPointer
 extension GPSafeSwiftPointer where TYPE : ByteArrayType {
-    func getByteArray() -> [UInt8] {
+    public func getByteArray() -> [UInt8] {
         var ret = [UInt8]()
         ret.reserveCapacity(self.allocatedMemory * self.sizeofType)
         

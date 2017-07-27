@@ -11,27 +11,27 @@
 import Foundation
 
 extension Int:GenericIntegerType, GenericSignedIntegerBitPattern  {
-    init(bitPattern: UIntMax) {
+    public init(bitPattern: UIntMax) {
         self.init(bitPattern: UInt(truncatingBitPattern: bitPattern))
     }
 }
 
 extension Int8:GenericIntegerType, GenericSignedIntegerBitPattern {
-    init(bitPattern: UIntMax) {
+    public init(bitPattern: UIntMax) {
         self.init(bitPattern: UInt8(truncatingBitPattern: bitPattern))
     }
 }
 
 
 extension Int16:GenericIntegerType, GenericSignedIntegerBitPattern {
-    init(bitPattern: UIntMax) {
+    public init(bitPattern: UIntMax) {
         self.init(bitPattern: UInt16(truncatingBitPattern: bitPattern))
     }
 }
 
 
 extension Int32:GenericIntegerType, GenericSignedIntegerBitPattern {
-    init(bitPattern: UIntMax) {
+    public init(bitPattern: UIntMax) {
         self.init(bitPattern: UInt32(truncatingBitPattern: bitPattern))
     }
 }
@@ -40,7 +40,7 @@ extension Int32:GenericIntegerType, GenericSignedIntegerBitPattern {
 extension Int64:GenericIntegerType, GenericSignedIntegerBitPattern {
     // init(bitPattern: UInt64) already defined
     
-    init(truncatingBitPattern: IntMax) {
+    public init(truncatingBitPattern: IntMax) {
         self.init(truncatingBitPattern)
     }
 }
@@ -48,28 +48,28 @@ extension Int64:GenericIntegerType, GenericSignedIntegerBitPattern {
 
 // MARK: - ByteArrayType extension for signed integer
 extension Int8 : ByteArrayType {
-    func getByteArray() -> [UInt8] {
+    public func getByteArray() -> [UInt8] {
         return getGenericByteArray(self)
     }
 }
 
 
 extension Int16 : ByteArrayType {
-    func getByteArray() -> [UInt8] {
+    public func getByteArray() -> [UInt8] {
         return getGenericByteArray(self)
     }
 }
 
 
 extension Int32 : ByteArrayType {
-    func getByteArray() -> [UInt8] {
+    public func getByteArray() -> [UInt8] {
         return getGenericByteArray(self)
     }
 }
 
 
 extension Int64 : ByteArrayType {
-    func getByteArray() -> [UInt8] {
+    public func getByteArray() -> [UInt8] {
         return getGenericByteArray(self)
     }
 }
