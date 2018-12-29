@@ -3,7 +3,7 @@
 //  GPSafeSwiftPointer
 //
 //  Created by Gabriele on 26/07/15.
-//  Copyright © 2015 Gabriele Pongelli. All rights reserved.
+//  Copyright © 2015-2019 Gabriele Pongelli. All rights reserved.
 //
 // For GenericIntegerType and GenericSignedIntegerBitPattern
 //  credits to https://gist.github.com/krzyzanowskim/c84d039d1542c1a82731

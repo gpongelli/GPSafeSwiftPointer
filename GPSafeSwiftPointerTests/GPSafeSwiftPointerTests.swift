@@ -3,7 +3,7 @@
 //  GPSafeSwiftPointerTests
 //
 //  Created by Gabriele on 16/07/15.
-//  Copyright © 2015 Gabriele Pongelli. All rights reserved.
+//  Copyright © 2015-2019 Gabriele Pongelli. All rights reserved.
 //
 
 import XCTest
