@@ -4,6 +4,13 @@
 A framework containing a safe wrapper for UnsafeMutablePointer with integer to byte array generics.
 
 ## Requirements
+### Swift4.2 branch
+- Xcode 10
+- Swift 4.2
+### Swift3 branch
+- Xcode 8
+-Swift 3
+### Swift2.1 branch
 - Xcode 7
 - Swift 2
 
