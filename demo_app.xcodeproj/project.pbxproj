@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,7 +12,7 @@
 		E073CD171B7B8F82002E4719 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E073CD151B7B8F82002E4719 /* Main.storyboard */; };
 		E073CD191B7B8F82002E4719 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E073CD181B7B8F82002E4719 /* Assets.xcassets */; };
 		E073CD1C1B7B8F82002E4719 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E073CD1A1B7B8F82002E4719 /* LaunchScreen.storyboard */; };
-		E073CD251B7B9260002E4719 /* GPSafeSwiftPointer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E073CD241B7B9260002E4719 /* GPSafeSwiftPointer.framework */; };
+		E0DF615D21D7C8FC00514117 /* GPSafeSwiftPointer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0DF615C21D7C8FC00514117 /* GPSafeSwiftPointer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,7 +24,7 @@
 		E073CD1B1B7B8F82002E4719 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E073CD1D1B7B8F82002E4719 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E073CD231B7B8FAF002E4719 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
-		E073CD241B7B9260002E4719 /* GPSafeSwiftPointer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GPSafeSwiftPointer.framework; path = demo_app/Carthage/Build/iOS/GPSafeSwiftPointer.framework; sourceTree = "<group>"; };
+		E0DF615C21D7C8FC00514117 /* GPSafeSwiftPointer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GPSafeSwiftPointer.framework; path = Carthage/Build/iOS/GPSafeSwiftPointer.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,7 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E073CD251B7B9260002E4719 /* GPSafeSwiftPointer.framework in Frameworks */,
+				E0DF615D21D7C8FC00514117 /* GPSafeSwiftPointer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,7 +42,7 @@
 		E073CD051B7B8F82002E4719 = {
 			isa = PBXGroup;
 			children = (
-				E073CD241B7B9260002E4719 /* GPSafeSwiftPointer.framework */,
+				E0DF615C21D7C8FC00514117 /* GPSafeSwiftPointer.framework */,
 				E073CD101B7B8F82002E4719 /* demo_app */,
 				E073CD0F1B7B8F82002E4719 /* Products */,
 			);
@@ -102,12 +102,12 @@
 				TargetAttributes = {
 					E073CD0D1B7B8F82002E4719 = {
 						CreatedOnToolsVersion = 7.0;
-						LastSwiftMigration = 0830;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
 			buildConfigurationList = E073CD091B7B8F82002E4719 /* Build configuration list for PBXProject "demo_app" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -144,14 +144,14 @@
 			files = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/demo_app/Carthage/Build/iOS/GPSafeSwiftPointer.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/GPSafeSwiftPointer.framework",
 			);
 			name = Carthage;
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -295,6 +295,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = demo_app/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,7 +309,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pongelli.gabriele.demo-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -310,6 +319,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = demo_app/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -317,7 +333,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pongelli.gabriele.demo-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
