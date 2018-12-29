@@ -76,8 +76,8 @@ open class GPSafeSwiftPointer<TYPE> : NSObject {
     
     //MARK: - Deinitialization
     deinit {
-        unsafeMutablePointer.deinitialize()
-        unsafeMutablePointer.deallocate(capacity: allocatedMemory)
+        unsafeMutablePointer.deinitialize(count: self.allocatedMemory)
+        unsafeMutablePointer.deallocate()
     }
 }
 

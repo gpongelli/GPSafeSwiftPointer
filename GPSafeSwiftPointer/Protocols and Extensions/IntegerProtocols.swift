@@ -14,7 +14,7 @@ import Foundation
 typealias Byte = UInt8
 
 // MARK: - Generic Integer Protocols
-public protocol GenericIntegerType: Integer {
+protocol GenericIntegerType: BinaryInteger {
     init(_ v: Int)
     init(_ v: UInt)
     init(_ v: Int8)
@@ -27,13 +27,13 @@ public protocol GenericIntegerType: Integer {
     init(_ v: UInt64)
 }
 
-public protocol GenericSignedIntegerBitPattern {
-    init(bitPattern: UIntMax)
-    init(truncatingBitPattern: IntMax)
+protocol GenericSignedIntegerBitPattern {
+    init(bitPattern: UInt64)
+    init(truncatingIfNeeded: Int64)
 }
 
 public protocol GenericUnsignedIntegerBitPattern {
-    init(truncatingBitPattern: UIntMax)
+    init(truncatingIfNeeded: UInt64)
 }
 
 
@@ -50,11 +50,11 @@ func integerWithBytes<T: GenericIntegerType>(_ bytes:[UInt8]) -> T? where T: Uns
     }
     
     let maxBytes = MemoryLayout<T>.size
-    var i:UIntMax = 0
+    var i:UInt64 = 0
     for j in 0..<maxBytes {
-        i = i | T(bytes[maxBytes - j - 1]).toUIntMax() << UIntMax(j * 8)
+        i = i | UInt64(T(bytes[maxBytes - j - 1])) << UInt64(j * 8)
     }
-    return T(truncatingBitPattern: i)
+    return T(truncatingIfNeeded: i)
 }
 
 func integerWithBytes<T: GenericIntegerType>(_ bytes:[UInt8]) -> T? where T: SignedInteger, T:  GenericSignedIntegerBitPattern {
@@ -63,11 +63,11 @@ func integerWithBytes<T: GenericIntegerType>(_ bytes:[UInt8]) -> T? where T: Sig
     }
     
     let maxBytes = MemoryLayout<T>.size
-    var i:IntMax = 0
+    var i:Int64 = 0
     for j in 0 ..< maxBytes {
-        i = i | T(bitPattern: UIntMax(bytes[maxBytes - j - 1].toUIntMax())).toIntMax() << (j * 8).toIntMax()
+        i = i | Int64(T(bitPattern: UInt64(bytes[maxBytes - j - 1]))) << Int64(j * 8)
     }
-    return T(truncatingBitPattern: i)
+    return T(truncatingIfNeeded: i)
 }
 
 
@@ -77,7 +77,7 @@ func getGenericByteArray<T : GenericIntegerType>(_ unsInt : T) -> [UInt8] where 
     var ret = [UInt8](repeating: 0, count: sizeofT)
     
     for j in 0 ..< sizeofT {
-        ret[sizeofT - j - 1] = UInt8((unsInt.toUIntMax() >> UIntMax(j * 8)) & 0xFF)
+        ret[sizeofT - j - 1] = UInt8((UInt64(unsInt) >> UInt64(j * 8)) & 0xFF)
     }
     
     return ret
@@ -89,7 +89,7 @@ func getGenericByteArray<T : GenericIntegerType>(_ unsInt : T) -> [UInt8] where 
     var ret = [UInt8](repeating: 0, count: sizeofT)
     
     for j in 0 ..< sizeofT {
-        ret[sizeofT - j - 1] = UInt8((unsInt.toIntMax() >> IntMax(j * 8)) & 0xFF)
+        ret[sizeofT - j - 1] = UInt8((Int64(unsInt) >> Int64(j * 8)) & 0xFF)
     }
     
     return ret

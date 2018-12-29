@@ -11,28 +11,28 @@
 import Foundation
 
 extension Int:GenericIntegerType, GenericSignedIntegerBitPattern  {
-    public init(bitPattern: UIntMax) {
-        self.init(bitPattern: UInt(truncatingBitPattern: bitPattern))
+    public init(bitPattern: UInt64) {
+        self.init(bitPattern: UInt(truncatingIfNeeded: bitPattern))
     }
 }
 
 extension Int8:GenericIntegerType, GenericSignedIntegerBitPattern {
-    public init(bitPattern: UIntMax) {
-        self.init(bitPattern: UInt8(truncatingBitPattern: bitPattern))
+    public init(bitPattern: UInt64) {
+        self.init(bitPattern: UInt8(truncatingIfNeeded: bitPattern))
     }
 }
 
 
 extension Int16:GenericIntegerType, GenericSignedIntegerBitPattern {
-    public init(bitPattern: UIntMax) {
-        self.init(bitPattern: UInt16(truncatingBitPattern: bitPattern))
+    public init(bitPattern: UInt64) {
+        self.init(bitPattern: UInt16(truncatingIfNeeded: bitPattern))
     }
 }
 
 
 extension Int32:GenericIntegerType, GenericSignedIntegerBitPattern {
-    public init(bitPattern: UIntMax) {
-        self.init(bitPattern: UInt32(truncatingBitPattern: bitPattern))
+    public init(bitPattern: UInt64) {
+        self.init(bitPattern: UInt32(truncatingIfNeeded: bitPattern))
     }
 }
 
@@ -40,7 +40,7 @@ extension Int32:GenericIntegerType, GenericSignedIntegerBitPattern {
 extension Int64:GenericIntegerType, GenericSignedIntegerBitPattern {
     // init(bitPattern: UInt64) already defined
     
-    public init(truncatingBitPattern: IntMax) {
+    init(truncatingBitPattern: Int64) {
         self.init(truncatingBitPattern)
     }
 }

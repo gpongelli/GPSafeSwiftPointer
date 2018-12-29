@@ -20,7 +20,7 @@ extension UInt16:GenericIntegerType, GenericUnsignedIntegerBitPattern {}
 extension UInt32:GenericIntegerType, GenericUnsignedIntegerBitPattern {}
 
 extension UInt64:GenericIntegerType, GenericUnsignedIntegerBitPattern {    
-    public init(truncatingBitPattern: UIntMax) {
+    init(truncatingBitPattern: UInt64) {
         self.init(truncatingBitPattern)
     }
 }

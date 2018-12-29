@@ -117,8 +117,8 @@ class GPSafeSwiftPointerTests: XCTestCase {
         let ump = UnsafeMutablePointer<UInt32>.allocate(capacity: 1)
         ump.initialize(to: 1054)
         XCTAssertEqual(ump.returnByteArray(), [0, 0, 4, 30], "UnsafeMutablePointer getByteArray Error")
-        ump.deinitialize()
-        ump.deallocate(capacity: 1)
+        ump.deinitialize(count: 1)
+        ump.deallocate()
     }
     
     func testGPSafeGetByteArray() {
