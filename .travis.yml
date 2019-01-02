@@ -1,0 +1,30 @@
+osx_image: xcode10
+language: objective-c
+
+xcode_project: GPSafeSwiftPointer.xcodeproj
+xcode_scheme: GPSafeSwiftPointer
+
+rvm: 2.2.2
+
+matrix:
+  include:
+    - xcode_sdk: iphonesimulator
+      env: DEST="platform=iOS Simulator,OS=11.2,name=iPhone 8 Plus" 
+
+    - xcode_sdk: macosx
+      env: DEST="platform=macOS,arch=x86_64"
+
+    - xcode_sdk: appletvsimulator
+      env: DEST="platform=tvOS Simulator,OS=11.0,name=Apple TV 4K"
+
+    - xcode_sdk: watchsimulator
+      env: DEST="OS=3.2,name=Apple Watch - 42mm"
+
+before_install:
+  - gem install xcpretty
+  - gem install xcpretty-travis-formatter
+
+
+script:
+  - set -o pipefail
+  - xcodebuild clean build test -project "$TRAVIS_XCODE_PROJECT" -scheme "$TRAVIS_XCODE_SCHEME" -sdk "$TRAVIS_XCODE_SDK"  -destination "$DEST" CODE_SIGNING_REQUIRED=NO  ONLY_ACTIVE_ARCH=NO  RUN_CLANG_STATIC_ANALYZER=YES | xcpretty -f `xcpretty-travis-formatter`
