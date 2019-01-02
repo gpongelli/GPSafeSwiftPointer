@@ -1,5 +1,6 @@
 # GPSafeSwiftPointer
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![Build Status](https://travis-ci.com/gpongelli/GPSafeSwiftPointer.svg?branch=master)](https://travis-ci.com/gpongelli/GPSafeSwiftPointer)
 
 A framework containing a safe wrapper for UnsafeMutablePointer with integer to byte array generics.
 
