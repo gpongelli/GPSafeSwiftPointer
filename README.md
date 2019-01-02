@@ -9,7 +9,7 @@ A framework containing a safe wrapper for UnsafeMutablePointer with integer to b
 - Swift 4.2
 ### Swift3 branch
 - Xcode 8
--Swift 3
+- Swift 3
 ### Swift2.1 branch
 - Xcode 7
 - Swift 2
