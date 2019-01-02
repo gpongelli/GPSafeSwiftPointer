@@ -11,14 +11,14 @@ matrix:
     - xcode_sdk: iphonesimulator
       env: DEST="platform=iOS Simulator,OS=11.2,name=iPhone 8 Plus" 
 
-    - xcode_sdk: macosx
-      env: DEST="platform=macOS,arch=x86_64"
-
-    - xcode_sdk: appletvsimulator
-      env: DEST="platform=tvOS Simulator,OS=11.0,name=Apple TV 4K"
-
-    - xcode_sdk: watchsimulator
-      env: DEST="OS=3.2,name=Apple Watch - 42mm"
+#    - xcode_sdk: macosx
+#      env: DEST="platform=macOS,arch=x86_64"
+#
+#    - xcode_sdk: appletvsimulator
+#      env: DEST="platform=tvOS Simulator,OS=11.0,name=Apple TV 4K"
+#
+#    - xcode_sdk: watchsimulator
+#      env: DEST="OS=5.0,name=Apple Watch - 42mm"
 
 before_install:
   - gem install xcpretty
